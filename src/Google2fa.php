@@ -16,7 +16,7 @@ class Google2fa extends Tool
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'nova-google2fa');
+        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'google2fa');
     }
 
     /**
