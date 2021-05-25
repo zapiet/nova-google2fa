@@ -32,8 +32,8 @@ class ToolServiceProvider extends ServiceProvider
 
             // Publishes the views
             $this->publishes([
-                __DIR__.'/../resources/views' => resource_path('views/vendor/lifeonscreen/nova-google2fa'),
-            ]);
+                __DIR__.'/../resources/views' => resource_path('views/vendor/nova-google2fa'),
+            ], 'lifeonscreen2fa.views');
         }
 
         $this->app->booted(function () {
