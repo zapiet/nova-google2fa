@@ -32,7 +32,7 @@ class ToolServiceProvider extends ServiceProvider
 
             // Publishes the views
             $this->publishes([
-                __DIR__.'/../resources/views' => resource_path('views/vendor/nova-google2fa'),
+                __DIR__.'/../resources/views' => resource_path('views/vendor/google2fa'),
             ], 'lifeonscreen2fa.views');
         }
 
