@@ -42,7 +42,7 @@ class Google2fa extends Tool
         );
 
         $data['google2fa_url'] = $google2fa_url;
-        $data['error'] = 'Secret is invalid.';
+        $data['error'] = 'One-time password is invalid. Check if your device clock is syncing.';
 
         return view('google2fa::register', $data);
     }

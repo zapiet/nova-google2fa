@@ -27,7 +27,7 @@ class Google2fa
             return $next($request);
         }
         if ($request->path() === 'los/2fa/confirm' || $request->path() === 'los/2fa/authenticate'
-            || $request->path() === 'los/2fa/register') {
+            || $request->path() === 'los/2fa/register' || $request->path() === 'nova/logout') {
             return $next($request);
         }
         $authenticator = app(Google2FAAuthenticator::class)->boot($request);

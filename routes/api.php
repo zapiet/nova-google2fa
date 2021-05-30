@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 /**
  * This route is called when user must first time confirm secret
  */
-Route::post('register', 'Lifeonscreen\Google2fa\Google2fa@confirm');
+Route::post('register', 'Lifeonscreen\Google2fa\Google2fa@register');
 
 /**
  * This route is called when user must first time confirm secret
